@@ -1,0 +1,21 @@
+{
+  "name": "lambda-dynamo-to-elasticsearch",
+  "description": "Provides a DynamoDB Stream to Elasticsearch pipeline",
+  "version": "0.0.2",
+  "private": "true",
+  "dependencies": {
+    "aws-sdk": "^2.1.40",
+    "elasticsearch": "^8.2.0",
+    "http-aws-es": "^1.1.1",
+    "node-uuid": "^1.4.3",
+    "underscore": "^1.8.3",
+    "when": "^3.7.3"
+  },
+  "devDependencies": {
+    "grunt": "0.4.*",
+    "grunt-pack": "0.1.*",
+    "grunt-aws-lambda": "0.7.*",
+    "npm": "^2.2.0"
+  },
+  "bundledDependencies": []
+}

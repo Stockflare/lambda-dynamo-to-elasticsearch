@@ -1,0 +1,1 @@
+# Lambda DynamoDB to Elasticsearch

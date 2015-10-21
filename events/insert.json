@@ -1,0 +1,568 @@
+{
+    "Records": [
+        {
+            "eventID": "c286835730fc719c4b35ce9f573846d2",
+            "eventName": "INSERT",
+            "eventVersion": "1.0",
+            "eventSource": "aws:dynamodb",
+            "awsRegion": "us-east-1",
+            "dynamodb": {
+                "Keys": {
+                    "updated_at": {
+                        "N": "1438128000"
+                    },
+                    "sic": {
+                        "S": "c38c0b04-684d-11e4-9d46-4d2391e1d22d"
+                    }
+                },
+                "NewImage": {
+                    "cheaper": {
+                        "BOOL": false
+                    },
+                    "gross_margin": {
+                        "N": "33.523"
+                    },
+                    "long_term_growth": {
+                        "NULL": true
+                    },
+                    "rating": {
+                        "N": "3"
+                    },
+                    "shares_outstanding": {
+                        "N": "94685200"
+                    },
+                    "recommendation": {
+                        "N": "1"
+                    },
+                    "enterprise_value_to_operating_profit": {
+                        "N": "9.897"
+                    },
+                    "sales_next_quarter": {
+                        "N": "406"
+                    },
+                    "growing": {
+                        "BOOL": true
+                    },
+                    "target_price": {
+                        "N": "58"
+                    },
+                    "price": {
+                        "N": "55"
+                    },
+                    "forecast_dividend_yield": {
+                        "N": "0.026"
+                    },
+                    "one_month_price_change": {
+                        "N": "0.042"
+                    },
+                    "market_value": {
+                        "N": "5254.41"
+                    },
+                    "price_change": {
+                        "N": "3.189"
+                    },
+                    "forecast_eps": {
+                        "N": "2.56"
+                    },
+                    "pe_ratio": {
+                        "N": "24.943"
+                    },
+                    "profitable": {
+                        "BOOL": true
+                    },
+                    "enterprise_value": {
+                        "N": "4871.32"
+                    },
+                    "eps": {
+                        "N": "2.205"
+                    },
+                    "cash_flow_per_share": {
+                        "N": "5.847"
+                    },
+                    "long_term_gain": {
+                        "NULL": true
+                    },
+                    "one_month_forecast_eps_change": {
+                        "N": "0"
+                    },
+                    "latest_sales": {
+                        "N": "1398.869"
+                    },
+                    "operating_profit": {
+                        "N": "492.188"
+                    },
+                    "recommendation_text": {
+                        "S": "strong_buy"
+                    },
+                    "three_month_price_change": {
+                        "N": "0.3"
+                    },
+                    "eps_next_quarter": {
+                        "N": "0.55"
+                    },
+                    "forecast_sales": {
+                        "N": "1547"
+                    },
+                    "net_profit": {
+                        "N": "178.946"
+                    },
+                    "three_month_forecast_eps_change": {
+                        "N": "-0.21"
+                    },
+                    "high_growth": {
+                        "BOOL": false
+                    },
+                    "price_to_book_value": {
+                        "N": "2.342"
+                    },
+                    "sic": {
+                        "S": "c38c0b04-684d-11e4-9d46-4d2391e1d22d"
+                    },
+                    "updated_at": {
+                        "N": "1438128000"
+                    },
+                    "forecast_pe": {
+                        "N": "21.484"
+                    },
+                    "forecast_dps": {
+                        "N": "1.41"
+                    },
+                    "dps": {
+                        "N": "1"
+                    },
+                    "net_cash": {
+                        "BOOL": true
+                    },
+                    "peer_average_forecast_pe": {
+                        "N": "20.288"
+                    },
+                    "market_value_usd": {
+                        "N": "167.202"
+                    },
+                    "free_cash_flow_yield": {
+                        "N": "0.124"
+                    },
+                    "momentum": {
+                        "N": "-2.387"
+                    },
+                    "fifty_two_week_low": {
+                        "N": "38.3"
+                    },
+                    "peer_average_long_term_growth": {
+                        "N": "21.807"
+                    },
+                    "book_value": {
+                        "N": "23.488"
+                    },
+                    "upside": {
+                        "BOOL": true
+                    },
+                    "ten_day_average_volume": {
+                        "N": "3.659"
+                    },
+                    "dividends": {
+                        "BOOL": true
+                    },
+                    "forecast_net_profit": {
+                        "N": "332"
+                    },
+                    "return_on_equity": {
+                        "N": "10.518"
+                    },
+                    "enterprise_value_to_sales": {
+                        "N": "3.482"
+                    },
+                    "fifty_two_week_high": {
+                        "N": "67"
+                    },
+                    "seven_year_gain": {
+                        "N": "0"
+                    },
+                    "per_year_gain": {
+                        "N": "0"
+                    }
+                },
+                "SequenceNumber": "72339500000000000267204716",
+                "SizeBytes": 1075,
+                "StreamViewType": "NEW_IMAGE"
+            },
+            "eventSourceARN": "arn:aws:dynamodb:us-east-1:318741577598:table/api-historical-HistoricalDynamoDBTable-1PRAW1MXTCMDW/stream/2015-10-20T15:34:47.775"
+        },
+        {
+            "eventID": "5cd2bd6d5278040c61dcfdcdbf7aa6f2",
+            "eventName": "INSERT",
+            "eventVersion": "1.0",
+            "eventSource": "aws:dynamodb",
+            "awsRegion": "us-east-1",
+            "dynamodb": {
+                "Keys": {
+                    "updated_at": {
+                        "N": "1438214400"
+                    },
+                    "sic": {
+                        "S": "c38c0b04-684d-11e4-9d46-4d2391e1d22d"
+                    }
+                },
+                "NewImage": {
+                    "cheaper": {
+                        "BOOL": false
+                    },
+                    "gross_margin": {
+                        "N": "33.523"
+                    },
+                    "long_term_growth": {
+                        "NULL": true
+                    },
+                    "rating": {
+                        "N": "3"
+                    },
+                    "shares_outstanding": {
+                        "N": "94685200"
+                    },
+                    "recommendation": {
+                        "N": "1"
+                    },
+                    "enterprise_value_to_operating_profit": {
+                        "N": "9.8"
+                    },
+                    "sales_next_quarter": {
+                        "N": "406"
+                    },
+                    "growing": {
+                        "BOOL": true
+                    },
+                    "target_price": {
+                        "N": "58"
+                    },
+                    "price": {
+                        "N": "54.5"
+                    },
+                    "forecast_dividend_yield": {
+                        "N": "0.026"
+                    },
+                    "one_month_price_change": {
+                        "N": "0.032"
+                    },
+                    "market_value": {
+                        "N": "5206.643"
+                    },
+                    "price_change": {
+                        "N": "-0.909"
+                    },
+                    "forecast_eps": {
+                        "N": "2.56"
+                    },
+                    "pe_ratio": {
+                        "N": "24.716"
+                    },
+                    "profitable": {
+                        "BOOL": true
+                    },
+                    "enterprise_value": {
+                        "N": "4823.553"
+                    },
+                    "eps": {
+                        "N": "2.205"
+                    },
+                    "cash_flow_per_share": {
+                        "N": "5.847"
+                    },
+                    "long_term_gain": {
+                        "NULL": true
+                    },
+                    "one_month_forecast_eps_change": {
+                        "N": "0"
+                    },
+                    "latest_sales": {
+                        "N": "1398.869"
+                    },
+                    "operating_profit": {
+                        "N": "492.188"
+                    },
+                    "recommendation_text": {
+                        "S": "strong_buy"
+                    },
+                    "three_month_price_change": {
+                        "N": "0.288"
+                    },
+                    "eps_next_quarter": {
+                        "N": "0.55"
+                    },
+                    "forecast_sales": {
+                        "N": "1547"
+                    },
+                    "net_profit": {
+                        "N": "178.946"
+                    },
+                    "three_month_forecast_eps_change": {
+                        "N": "-0.21"
+                    },
+                    "high_growth": {
+                        "BOOL": false
+                    },
+                    "price_to_book_value": {
+                        "N": "2.32"
+                    },
+                    "sic": {
+                        "S": "c38c0b04-684d-11e4-9d46-4d2391e1d22d"
+                    },
+                    "updated_at": {
+                        "N": "1438214400"
+                    },
+                    "forecast_pe": {
+                        "N": "21.289"
+                    },
+                    "forecast_dps": {
+                        "N": "1.41"
+                    },
+                    "dps": {
+                        "N": "1"
+                    },
+                    "net_cash": {
+                        "BOOL": true
+                    },
+                    "peer_average_forecast_pe": {
+                        "N": "20.432"
+                    },
+                    "market_value_usd": {
+                        "N": "165.294"
+                    },
+                    "free_cash_flow_yield": {
+                        "N": "0.126"
+                    },
+                    "momentum": {
+                        "N": "-2.567"
+                    },
+                    "fifty_two_week_low": {
+                        "N": "38.3"
+                    },
+                    "peer_average_long_term_growth": {
+                        "N": "21.807"
+                    },
+                    "book_value": {
+                        "N": "23.488"
+                    },
+                    "upside": {
+                        "BOOL": true
+                    },
+                    "ten_day_average_volume": {
+                        "N": "3.1"
+                    },
+                    "dividends": {
+                        "BOOL": true
+                    },
+                    "forecast_net_profit": {
+                        "N": "332"
+                    },
+                    "return_on_equity": {
+                        "N": "10.518"
+                    },
+                    "enterprise_value_to_sales": {
+                        "N": "3.448"
+                    },
+                    "fifty_two_week_high": {
+                        "N": "67"
+                    },
+                    "seven_year_gain": {
+                        "N": "0"
+                    },
+                    "per_year_gain": {
+                        "N": "0"
+                    }
+                },
+                "SequenceNumber": "72339600000000000267204720",
+                "SizeBytes": 1076,
+                "StreamViewType": "NEW_IMAGE"
+            },
+            "eventSourceARN": "arn:aws:dynamodb:us-east-1:318741577598:table/api-historical-HistoricalDynamoDBTable-1PRAW1MXTCMDW/stream/2015-10-20T15:34:47.775"
+        },
+        {
+            "eventID": "e0edb40de7127f2a3898f73cd6485daf",
+            "eventName": "INSERT",
+            "eventVersion": "1.0",
+            "eventSource": "aws:dynamodb",
+            "awsRegion": "us-east-1",
+            "dynamodb": {
+                "Keys": {
+                    "updated_at": {
+                        "N": "1438300800"
+                    },
+                    "sic": {
+                        "S": "c38c0b04-684d-11e4-9d46-4d2391e1d22d"
+                    }
+                },
+                "NewImage": {
+                    "cheaper": {
+                        "BOOL": false
+                    },
+                    "gross_margin": {
+                        "N": "33.523"
+                    },
+                    "long_term_growth": {
+                        "NULL": true
+                    },
+                    "rating": {
+                        "N": "3"
+                    },
+                    "shares_outstanding": {
+                        "N": "94685200"
+                    },
+                    "recommendation": {
+                        "N": "1"
+                    },
+                    "enterprise_value_to_operating_profit": {
+                        "N": "9.8"
+                    },
+                    "sales_next_quarter": {
+                        "N": "406"
+                    },
+                    "growing": {
+                        "BOOL": true
+                    },
+                    "target_price": {
+                        "N": "58"
+                    },
+                    "price": {
+                        "N": "54.5"
+                    },
+                    "forecast_dividend_yield": {
+                        "N": "0.026"
+                    },
+                    "one_month_price_change": {
+                        "N": "-0.035"
+                    },
+                    "market_value": {
+                        "N": "5206.643"
+                    },
+                    "price_change": {
+                        "N": "0"
+                    },
+                    "forecast_eps": {
+                        "N": "2.56"
+                    },
+                    "pe_ratio": {
+                        "N": "24.716"
+                    },
+                    "profitable": {
+                        "BOOL": true
+                    },
+                    "enterprise_value": {
+                        "N": "4823.553"
+                    },
+                    "eps": {
+                        "N": "2.205"
+                    },
+                    "cash_flow_per_share": {
+                        "N": "5.847"
+                    },
+                    "long_term_gain": {
+                        "NULL": true
+                    },
+                    "one_month_forecast_eps_change": {
+                        "N": "0"
+                    },
+                    "latest_sales": {
+                        "N": "1398.869"
+                    },
+                    "operating_profit": {
+                        "N": "492.188"
+                    },
+                    "recommendation_text": {
+                        "S": "strong_buy"
+                    },
+                    "three_month_price_change": {
+                        "N": "0.288"
+                    },
+                    "eps_next_quarter": {
+                        "N": "0.55"
+                    },
+                    "forecast_sales": {
+                        "N": "1547"
+                    },
+                    "net_profit": {
+                        "N": "178.946"
+                    },
+                    "three_month_forecast_eps_change": {
+                        "N": "-0.21"
+                    },
+                    "high_growth": {
+                        "BOOL": false
+                    },
+                    "price_to_book_value": {
+                        "N": "2.32"
+                    },
+                    "sic": {
+                        "S": "c38c0b04-684d-11e4-9d46-4d2391e1d22d"
+                    },
+                    "updated_at": {
+                        "N": "1438300800"
+                    },
+                    "forecast_pe": {
+                        "N": "21.289"
+                    },
+                    "forecast_dps": {
+                        "N": "1.41"
+                    },
+                    "dps": {
+                        "N": "1"
+                    },
+                    "net_cash": {
+                        "BOOL": true
+                    },
+                    "peer_average_forecast_pe": {
+                        "N": "19.942"
+                    },
+                    "market_value_usd": {
+                        "N": "164.912"
+                    },
+                    "free_cash_flow_yield": {
+                        "N": "0.126"
+                    },
+                    "momentum": {
+                        "N": "-1"
+                    },
+                    "fifty_two_week_low": {
+                        "N": "38.3"
+                    },
+                    "peer_average_long_term_growth": {
+                        "N": "21.807"
+                    },
+                    "book_value": {
+                        "N": "23.488"
+                    },
+                    "upside": {
+                        "BOOL": true
+                    },
+                    "ten_day_average_volume": {
+                        "N": "2.897"
+                    },
+                    "dividends": {
+                        "BOOL": true
+                    },
+                    "forecast_net_profit": {
+                        "N": "332"
+                    },
+                    "return_on_equity": {
+                        "N": "10.518"
+                    },
+                    "enterprise_value_to_sales": {
+                        "N": "3.448"
+                    },
+                    "fifty_two_week_high": {
+                        "N": "67"
+                    },
+                    "seven_year_gain": {
+                        "N": "0"
+                    },
+                    "per_year_gain": {
+                        "N": "0"
+                    }
+                },
+                "SequenceNumber": "72339700000000000267204723",
+                "SizeBytes": 1073,
+                "StreamViewType": "NEW_IMAGE"
+            },
+            "eventSourceARN": "arn:aws:dynamodb:us-east-1:318741577598:table/api-historical-HistoricalDynamoDBTable-1PRAW1MXTCMDW/stream/2015-10-20T15:34:47.775"
+        }
+    ]
+}
