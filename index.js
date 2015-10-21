@@ -1,12 +1,13 @@
 // dependencies
 var aws = require('aws-sdk');
-var uuid = require('node-uuid');
 var _ = require('underscore');
 var path = require('path');
 var elasticsearch = require('elasticsearch');
 var http_aws_es = require('http-aws-es');
 var when = require('when');
-var table = 'stock3';
+var table = 'stock';
+var region = 'us-east-1';
+var es_domain = 'stockflare-staging';
 
 exports.handler = function(event, context) {
 
@@ -14,13 +15,13 @@ exports.handler = function(event, context) {
   //  Log out the entire invocation
   // console.log(JSON.stringify(event, null, 2));
   var aws_es = new aws.ES({
-    region: 'us-east-1'
+    region: region
   });
 
 
   when.promise(function(resolve, reject, notify){
     aws_es.describeElasticsearchDomains({
-      DomainNames: ['stockflare-staging']
+      DomainNames: [ es_domain ]
     }, function(err, data){
       if (err) {
         console.log("describeElasticsearchDomains error:", err, data);
@@ -32,14 +33,15 @@ exports.handler = function(event, context) {
   }).then(function(result){
     // Create the Index if needed
     var promise = when.promise(function(resolve, reject, notify){
-      var myCredentials = new AWS.EnvironmentCredentials('AWS');
+      var myCredentials = new aws.EnvironmentCredentials('AWS');
       var es = elasticsearch.Client({
         hosts: result.domain.Endpoint,
         connectionClass: http_aws_es,
         amazonES: {
-          region: 'us-east-1',
+          region: region,
           credentials: myCredentials
         }
+
       });
 
       es.indices.exists({
@@ -129,10 +131,12 @@ var putRecord = function(es, table, record, exists) {
       index: table,
       id: record.dynamodb.NewImage.sic.S,
       body: esBody(record),
-      type: 'stock'
+      type: 'stock',
+      versionType: 'force',
+      version: record.dynamodb.NewImage.updated_at.N,
     };
     var handler = function(err, response, status) {
-      if (status == 200) {
+      if (status == 200 || status == 201) {
         console.log('Document written');
         resolve(record);
       } else {

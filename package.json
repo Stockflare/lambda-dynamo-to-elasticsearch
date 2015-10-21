@@ -7,7 +7,6 @@
     "aws-sdk": "^2.1.40",
     "elasticsearch": "^8.2.0",
     "http-aws-es": "^1.1.1",
-    "node-uuid": "^1.4.3",
     "underscore": "^1.8.3",
     "when": "^3.7.3"
   },
