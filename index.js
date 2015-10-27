@@ -107,6 +107,7 @@ var createIndex = function(es, table, callback) {
 
 var recordExists = function(es, table, record) {
   return when.promise(function(resolve, reject, notify){
+
     es.get({
       index: table,
       id: record.dynamodb.NewImage.sic.S,
@@ -133,7 +134,7 @@ var putRecord = function(es, table, record, exists) {
       body: esBody(record),
       type: 'stock',
       versionType: 'force',
-      version: record.dynamodb.NewImage.updated_at.N,
+      version: getPricingDate(record)
     };
     var handler = function(err, response, status) {
       if (status == 200 || status == 201) {
@@ -174,4 +175,14 @@ var esBody = function(record){
     return new_val;
   });
   return body;
+};
+
+var getPricingDate = function(record) {
+  var date = new Date();
+  date.setHours(0,0,0,0);
+  var pricing_date = Math.round(date.getTime() / 1000);
+  if (!_.isUndefined(record.dynamodb.NewImage.updated_at)) {
+    pricing_date = record.dynamodb.NewImage.updated_at.N;
+  }
+  return pricing_date;
 };
