@@ -132,9 +132,7 @@ var putRecord = function(es, table, record, exists) {
       index: table,
       id: record.dynamodb.NewImage.sic.S,
       body: esBody(record),
-      type: 'stock',
-      versionType: 'force',
-      version: getPricingDate(record)
+      type: 'stock'
     };
     var handler = function(err, response, status) {
       if (status == 200 || status == 201) {
