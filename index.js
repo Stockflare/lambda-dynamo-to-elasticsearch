@@ -18,7 +18,7 @@ exports.handler = function(event, context) {
     region: region
   });
 
-
+  // Promise - Describe the ES Domain in order to get the endpoint url
   when.promise(function(resolve, reject, notify){
     aws_es.describeElasticsearchDomains({
       DomainNames: [ es_domain ]
@@ -31,7 +31,8 @@ exports.handler = function(event, context) {
       }
     });
   }).then(function(result){
-    // Create the Index if needed
+    // Promise - Create the Index if needed - resolve if it is already there
+    // or create and then resolve
     var promise = when.promise(function(resolve, reject, notify){
       var myCredentials = new aws.EnvironmentCredentials('AWS');
       var es = elasticsearch.Client({
@@ -65,6 +66,7 @@ exports.handler = function(event, context) {
   }).then(function(result){
     console.log('Index is ready');
     // Create promises for every record that needs to be processed
+    // resolve as each successful callback comes in
     var records = _.map(event.Records, function(record, index, all_records){
       return when.promise(function(resolve, reject, notify){
         // First get the record
@@ -80,8 +82,10 @@ exports.handler = function(event, context) {
       });
     });
 
+    // return a promise array of all records
     return when.all(records);
   }).done(function(records){
+    // Succeed the context if all records have been created / updated
     console.log("Processed all records");
     context.succeed("Successfully processed " + records.length + " records.");
   }, function(reason){
@@ -156,7 +160,9 @@ var putRecord = function(es, table, record, exists) {
   });
 };
 
-
+// Deal with Floats and Nulls coming in on the Stream
+// in order to created a valid ES Body
+// Otherwise just reformat into ES body
 var esBody = function(record){
   var values = record.dynamodb.NewImage;
   var body = _.mapObject(values, function(val, key){
@@ -173,14 +179,4 @@ var esBody = function(record){
     return new_val;
   });
   return body;
-};
-
-var getPricingDate = function(record) {
-  var date = new Date();
-  date.setHours(0,0,0,0);
-  var pricing_date = Math.round(date.getTime() / 1000);
-  if (!_.isUndefined(record.dynamodb.NewImage.updated_at)) {
-    pricing_date = record.dynamodb.NewImage.updated_at.N;
-  }
-  return pricing_date;
 };
