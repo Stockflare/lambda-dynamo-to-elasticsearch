@@ -7,7 +7,7 @@ var http_aws_es = require('http-aws-es');
 var when = require('when');
 var table = 'stock';
 var region = 'us-east-1';
-var es_domain = 'stockflare-staging';
+var es_domain = 'stockflare-production';
 
 exports.handler = function(event, context) {
 
