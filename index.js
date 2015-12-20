@@ -8,6 +8,7 @@ var when = require('when');
 var table = 'stock';
 var region = 'us-east-1';
 var es_domain = 'stockflare-staging';
+var es_endpoint = 'https://search-stockflare-staging-ubxnko4nzxhg557m2fqv7abjae.us-east-1.es.amazonaws.com';
 
 exports.handler = function(event, context) {
 
@@ -20,14 +21,19 @@ exports.handler = function(event, context) {
 
   // Promise - Describe the ES Domain in order to get the endpoint url
   when.promise(function(resolve, reject, notify){
-    aws_es.describeElasticsearchDomains({
-      DomainNames: [ es_domain ]
-    }, function(err, data){
-      if (err) {
-        console.log("describeElasticsearchDomains error:", err, data);
-        reject(err);
-      } else {
-        resolve({domain: _.first(data.DomainStatusList)});
+    // aws_es.describeElasticsearchDomains({
+    //   DomainNames: [ es_domain ]
+    // }, function(err, data){
+    //   if (err) {
+    //     console.log("describeElasticsearchDomains error:", err, data);
+    //     reject(err);
+    //   } else {
+    //     resolve({domain: _.first(data.DomainStatusList)});
+    //   }
+    // });
+    resolve({
+      domain: {
+        Endpoint: es_endpoint
       }
     });
   }).then(function(result){
@@ -67,6 +73,7 @@ exports.handler = function(event, context) {
     console.log('Index is ready');
     // Create promises for every record that needs to be processed
     // resolve as each successful callback comes in
+    console.log(event.Records);
     var records = _.map(event.Records, function(record, index, all_records){
       return when.promise(function(resolve, reject, notify){
         // First get the record
