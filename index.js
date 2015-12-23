@@ -5,6 +5,7 @@ var path = require('path');
 var elasticsearch = require('elasticsearch');
 var http_aws_es = require('http-aws-es');
 var when = require('when');
+var moment = require('moment');
 var table = 'stock';
 var region = 'us-east-1';
 var es_domain = 'stockflare-production';
@@ -139,30 +140,41 @@ var recordExists = function(es, table, record) {
 var putRecord = function(es, table, record, exists) {
   console.log('putRecord:', record.dynamodb.NewImage.sic.S);
   return when.promise(function(resolve, reject, notify){
-    var params = {
-      index: table,
-      id: record.dynamodb.NewImage.sic.S,
-      body: esBody(record),
-      type: 'stock'
-    };
-    var handler = function(err, response, status) {
-      if (status == 200 || status == 201) {
-        console.log('Document written');
-        resolve(record);
-      } else {
-        console.log(err, response, status);
-        reject(err);
+    two_days_ago = (moment().utc().subtract(2, 'days').valueOf()) / 1000;
+    if (_.isUndefined(record.dynamodb.NewImage.updated_at) || record.dynamodb.NewImage.updated_at.N >= two_days_ago) {
+      console.log('Either no updated date or date within two days');
+      console.log(two_days_ago);
+      if (!_.isUndefined(record.dynamodb.NewImage.updated_at)) {
+        console.log(record.dynamodb.NewImage.updated_at.N);
       }
-    };
-
-    if (exists) {
-      params.body = {
-        doc: esBody(record)
+      var params = {
+        index: table,
+        id: record.dynamodb.NewImage.sic.S,
+        body: esBody(record),
+        type: 'stock'
       };
-      es.update(params, handler);
+      var handler = function(err, response, status) {
+        if (status == 200 || status == 201) {
+          console.log('Document written');
+          resolve(record);
+        } else {
+          console.log(err, response, status);
+          reject(err);
+        }
+      };
+
+      if (exists) {
+        params.body = {
+          doc: esBody(record)
+        };
+        es.update(params, handler);
+      } else {
+        params.body = esBody(record);
+        es.create(params, handler);
+      }
     } else {
-      params.body = esBody(record);
-      es.create(params, handler);
+      console.log('Not saving record because it is too old');
+      resolve(record);
     }
   });
 };
