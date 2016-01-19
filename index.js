@@ -77,16 +77,20 @@ exports.handler = function(event, context) {
     console.log(event.Records);
     var records = _.map(event.Records, function(record, index, all_records){
       return when.promise(function(resolve, reject, notify){
-        // First get the record
-        recordExists(result.es, table, record).then(function(exists){
-          // Now create or update the record.
-          return putRecord(result.es, table, record, exists);
-        }).then(function(record){
+        if (record.eventName == 'REMOVE') {
           resolve(record);
-        }, function(reason){
-          console.log(reason);
-          reject(reason);
-        });
+        } else {
+          // First get the record
+          recordExists(result.es, table, record).then(function(exists){
+            // Now create or update the record.
+            return putRecord(result.es, table, record, exists);
+          }).then(function(record){
+            resolve(record);
+          }, function(reason){
+            console.log(reason);
+            reject(reason);
+          });
+        }
       });
     });
 
