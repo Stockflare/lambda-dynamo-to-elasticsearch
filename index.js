@@ -144,7 +144,7 @@ var recordExists = function(es, table, record) {
 var putRecord = function(es, table, record, exists) {
   console.log('putRecord:', record.dynamodb.NewImage.sic.S);
   return when.promise(function(resolve, reject, notify){
-    two_days_ago = (moment().utc().subtract(2, 'days').valueOf()) / 1000;
+    two_days_ago = (moment().utc().subtract(5, 'days').valueOf()) / 1000;
     if (_.isUndefined(record.dynamodb.NewImage.updated_at) || record.dynamodb.NewImage.updated_at.N >= two_days_ago) {
       console.log('Either no updated date or date within two days');
       console.log(two_days_ago);
