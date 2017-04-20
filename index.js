@@ -55,10 +55,10 @@ exports.handler = function(event, context) {
       es.indices.exists({
         index: table
       },function(err, response, status){
-        console.log('Looking for Index');
-        console.log(err, response, status);
+        // console.log('Looking for Index');
+        // console.log(err, response, status);
         if (status == 200) {
-          console.log('Index Exists');
+          // console.log('Index Exists');
           resolve({es: es, domain: result.domain});
         } else if (status == 404) {
           createIndex(es, table, function(){
@@ -71,10 +71,10 @@ exports.handler = function(event, context) {
     });
     return promise;
   }).then(function(result){
-    console.log('Index is ready');
+    // console.log('Index is ready');
     // Create promises for every record that needs to be processed
     // resolve as each successful callback comes in
-    console.log(event.Records);
+    // console.log(event.Records);
     var records = _.map(event.Records, function(record, index, all_records){
       return when.promise(function(resolve, reject, notify){
         if (record.eventName == 'REMOVE') {
@@ -87,7 +87,7 @@ exports.handler = function(event, context) {
           }).then(function(record){
             resolve(record);
           }, function(reason){
-            console.log(reason);
+            // console.log(reason);
             reject(reason);
           });
         }
@@ -98,7 +98,7 @@ exports.handler = function(event, context) {
     return when.all(records);
   }).done(function(records){
     // Succeed the context if all records have been created / updated
-    console.log("Processed all records");
+    // console.log("Processed all records");
     context.succeed("Successfully processed " + records.length + " records.");
   }, function(reason){
     context.fail("Failed to process records " + reason);
@@ -108,14 +108,14 @@ exports.handler = function(event, context) {
 };
 
 var createIndex = function(es, table, callback) {
-  console.log('createIndex', table);
+  // console.log('createIndex', table);
   es.indices.create({
     index: table
   }, function(err, response, status){
     if (err) {
-      console.log("Index could not be created", err, response, status);
+      // console.log("Index could not be created", err, response, status);
     } else {
-      console.log("Index has been created");
+      // console.log("Index has been created");
     }
   });
 
@@ -130,7 +130,7 @@ var recordExists = function(es, table, record) {
       type: '_all'
     }, function(err, response, status){
       if (status == 200) {
-        console.log('Document Exists');
+        // console.log('Document Exists');
         resolve(true);
       } else if (status == 404) {
         resolve(false);
@@ -142,14 +142,14 @@ var recordExists = function(es, table, record) {
 };
 
 var putRecord = function(es, table, record, exists) {
-  console.log('putRecord:', record.dynamodb.NewImage.sic.S);
+  // console.log('putRecord:', record.dynamodb.NewImage.sic.S);
   return when.promise(function(resolve, reject, notify){
     two_days_ago = (moment().utc().subtract(5, 'days').valueOf()) / 1000;
     if (_.isUndefined(record.dynamodb.NewImage.updated_at) || record.dynamodb.NewImage.updated_at.N >= two_days_ago) {
-      console.log('Either no updated date or date within two days');
-      console.log(two_days_ago);
+      // console.log('Either no updated date or date within two days');
+      // console.log(two_days_ago);
       if (!_.isUndefined(record.dynamodb.NewImage.updated_at)) {
-        console.log(record.dynamodb.NewImage.updated_at.N);
+        // console.log(record.dynamodb.NewImage.updated_at.N);
       }
       var params = {
         index: table,
@@ -159,7 +159,7 @@ var putRecord = function(es, table, record, exists) {
       };
       var handler = function(err, response, status) {
         if (status == 200 || status == 201) {
-          console.log('Document written');
+          // console.log('Document written');
           resolve(record);
         } else {
           console.log(err, response, status);
@@ -177,7 +177,7 @@ var putRecord = function(es, table, record, exists) {
         es.create(params, handler);
       }
     } else {
-      console.log('Not saving record because it is too old');
+      // console.log('Not saving record because it is too old');
       resolve(record);
     }
   });
