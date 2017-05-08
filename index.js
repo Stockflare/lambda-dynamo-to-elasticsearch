@@ -10,6 +10,7 @@ var table = 'stock';
 var region = 'us-east-1';
 var es_domain = 'stockflare-production';
 var es_endpoint = 'https://search-stockflare-production-34le5cz4pso7iiztz7pqnkpks4.us-east-1.es.amazonaws.com';
+var rest = require('restler');
 
 exports.handler = function(event, context) {
 
@@ -49,25 +50,25 @@ exports.handler = function(event, context) {
           region: region,
           credentials: myCredentials
         }
-
       });
 
-      es.indices.exists({
-        index: table
-      },function(err, response, status){
-        // console.log('Looking for Index');
-        // console.log(err, response, status);
-        if (status == 200) {
-          // console.log('Index Exists');
-          resolve({es: es, domain: result.domain});
-        } else if (status == 404) {
-          createIndex(es, table, function(){
-            resolve({es: es, domain: result.domain});
-          });
-        } else {
-          reject(err);
-        }
-      });
+      // es.indices.exists({
+      //   index: table
+      // },function(err, response, status){
+      //   // console.log('Looking for Index');
+      //   // console.log(err, response, status);
+      //   if (status == 200) {
+      //     // console.log('Index Exists');
+      //     resolve({es: es, domain: result.domain});
+      //   } else if (status == 404) {
+      //     createIndex(es, table, function(){
+      //       resolve({es: es, domain: result.domain});
+      //     });
+      //   } else {
+      //     reject(err);
+      //   }
+      // });
+      resolve({es: es, domain: result.domain})
     });
     return promise;
   }).then(function(result){
@@ -151,31 +152,64 @@ var putRecord = function(es, table, record, exists) {
       if (!_.isUndefined(record.dynamodb.NewImage.updated_at)) {
         // console.log(record.dynamodb.NewImage.updated_at.N);
       }
-      var params = {
-        index: table,
-        id: record.dynamodb.NewImage.sic.S,
-        body: esBody(record),
-        type: 'stock'
-      };
-      var handler = function(err, response, status) {
-        if (status == 200 || status == 201) {
-          // console.log('Document written');
-          resolve(record);
-        } else {
-          console.log(err, response, status);
-          reject(err);
-        }
-      };
 
-      if (exists) {
-        params.body = {
-          doc: esBody(record)
+      // If the record is an instrument then get the Sector Code Name
+      //
+      when.promise(function(resolve, reject, notify){
+        if (record.dynamodb.NewImage.sector_code) {
+          var params = {
+            codes: [record.dynamodb.NewImage.sector_code.S]
+          }
+          // console.log(params)
+          rest.putJson('http://sectors.internal-stockflare.com', params)
+          .on('success', function(data, response){
+            if (data.length > 0) {
+              // console.log('Got Sector Code: ' + data[0].name);
+              record.dynamodb.NewImage.sector_code_name = {
+                S: data[0].name
+              }
+              resolve(record);
+
+            } else {
+              resolve(record)
+            }
+          }).on('fail', function(data, response){
+            // console.log('Could not get Sector Code:');
+            resolve(record);
+          });
+        } else {
+          resolve(record)
+        }
+      }).done(function() {
+        // Now save the record
+        var params = {
+          index: table,
+          id: record.dynamodb.NewImage.sic.S,
+          body: esBody(record),
+          type: 'stock'
         };
-        es.update(params, handler);
-      } else {
-        params.body = esBody(record);
-        es.create(params, handler);
-      }
+        var handler = function(err, response, status) {
+          if (status == 200 || status == 201) {
+            // console.log('Document written');
+            resolve(record);
+          } else {
+            console.log(err, response, status);
+            reject(err);
+          }
+        };
+
+        if (exists) {
+          params.body = {
+            doc: esBody(record)
+          };
+          es.update(params, handler);
+        } else {
+          params.body = esBody(record);
+          es.create(params, handler);
+        }
+      }, function(err) {
+        reject(err)
+      })
     } else {
       // console.log('Not saving record because it is too old');
       resolve(record);

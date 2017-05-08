@@ -1,0 +1,2595 @@
+{
+  "Records": [
+    {
+      "eventID": "c7dda6c22cd5a50c876cec3c391ca3f6",
+      "eventName": "MODIFY",
+      "eventVersion": "1.1",
+      "eventSource": "aws:dynamodb",
+      "awsRegion": "us-east-1",
+      "dynamodb": {
+        "ApproximateCreationDateTime": 1494247920,
+        "Keys": {
+          "sic": {
+            "S": "6c8227be-6855-11e4-98bf-294717b2347c"
+          }
+        },
+        "NewImage": {
+          "cik": {
+            "S": "0000320193"
+          },
+          "is_primary": {
+            "BOOL": true
+          },
+          "address_country_code": {
+            "S": "usa"
+          },
+          "description": {
+            "S": "Apple Inc. designs, manufactures and markets mobile communication and media devices, personal computers and portable digital music players. The Company sells a range of related software, services, accessories, networking solutions, and third-party digital content and applications. The Company's segments include the Americas, Europe, Greater China, Japan and Rest of Asia Pacific. The Americas segment includes both North and South America. The Europe segment includes European countries, India, the Middle East and Africa. The Greater China segment includes China, Hong Kong and Taiwan. The Rest of Asia Pacific segment includes Australia and the Asian countries not included in the Company's other operating segments. Its products and services include iPhone, iPad, Mac, iPod, Apple Watch, Apple TV, a portfolio of consumer and professional software applications, iPhone OS (iOS), OS X and watchOS operating systems, iCloud, Apple Pay and a range of accessory, service and support offerings. x"
+          },
+          "sic": {
+            "S": "6c8227be-6855-11e4-98bf-294717b2347c"
+          },
+          "ipo_date": {
+            "N": "345427200"
+          },
+          "issues": {
+            "L": []
+          },
+          "ric": {
+            "S": "aapl.o"
+          },
+          "currency_code": {
+            "S": "usd"
+          },
+          "long_name": {
+            "S": "Apple Inc."
+          },
+          "home_page": {
+            "S": "http://www.apple.com"
+          },
+          "repo_no": {
+            "S": "05680"
+          },
+          "split": {
+            "M": {
+              "date": {
+                "S": "2014-06-09T00:00:00+00:00"
+              },
+              "ratio": {
+                "N": "7"
+              }
+            }
+          },
+          "incorporated": {
+            "NULL": true
+          },
+          "auditors": {
+            "L": [
+              {
+                "S": "Ernst & Young LLP"
+              }
+            ]
+          },
+          "financial_summary": {
+            "S": "BRIEF: For the 27 weeks ended 01 April 2017, Apple Inc. revenues increased 4% to $131.25B. Net income increased less than 1% to $28.92B. Revenues reflect Americas- Operating segment increase of 10% to $53.13B, Europe-Operating segment increase of 6% to $31.25B. Net income reflects Americas- Operating segment income increase of 6% to $17.16B, Japan-Operating segment income increase of 13% to $4.71B."
+          },
+          "exchange_code": {
+            "S": "nsq"
+          },
+          "sector_code": {
+            "S": "5710601010"
+          },
+          "is_financial": {
+            "BOOL": false
+          },
+          "officers": {
+            "L": [
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2011-11-15"
+                          },
+                          "tenure": {
+                            "S": "officer"
+                          }
+                        }
+                      },
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2000-08-15"
+                          },
+                          "tenure": {
+                            "S": "director"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Dr."
+                          },
+                          "last_name": {
+                            "S": "Levinson"
+                          },
+                          "middle_name": {
+                            "S": "D."
+                          },
+                          "suffix": {
+                            "S": "Ph.D."
+                          },
+                          "first_name": {
+                            "S": "Art"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "66"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "480660"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Independent Chairman of the Board"
+                          },
+                          "start": {
+                            "S": "2011-11-15"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      },
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Independent Co-Lead Director"
+                          },
+                          "start": {
+                            "NULL": true
+                          },
+                          "end": {
+                            "S": "2011-11-15"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "1998-03-01"
+                          },
+                          "tenure": {
+                            "S": "officer"
+                          }
+                        }
+                      },
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2011-08-24"
+                          },
+                          "tenure": {
+                            "S": "director"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Cook"
+                          },
+                          "middle_name": {
+                            "S": "D."
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "Timothy"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "55"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "88090"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Chief Executive Officer, Director"
+                          },
+                          "start": {
+                            "S": "2011-08-24"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      },
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Chief Operating Officer"
+                          },
+                          "start": {
+                            "S": "2005-10-14"
+                          },
+                          "end": {
+                            "S": "2011-08-24"
+                          }
+                        }
+                      },
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Executive Vice President - Worldwide Sales and Operations"
+                          },
+                          "start": {
+                            "S": "2002-01-01"
+                          },
+                          "end": {
+                            "S": "2005-10-14"
+                          }
+                        }
+                      },
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Senior Vice President - Worldwide Operations, Sales, Service and Support"
+                          },
+                          "start": {
+                            "S": "2000-01-01"
+                          },
+                          "end": {
+                            "S": "2002-01-01"
+                          }
+                        }
+                      },
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Senior Vice President - Worldwide Operations"
+                          },
+                          "start": {
+                            "S": "1998-03-01"
+                          },
+                          "end": {
+                            "S": "2000-01-01"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2014-05-29"
+                          },
+                          "tenure": {
+                            "S": "officer"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Maestri"
+                          },
+                          "middle_name": {
+                            "NULL": true
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "Luca"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "53"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "1339708"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Chief Financial Officer, Senior Vice President, Principal Accounting Officer"
+                          },
+                          "start": {
+                            "S": "2014-05-29"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2010-07-01"
+                          },
+                          "tenure": {
+                            "S": "officer"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Williams"
+                          },
+                          "middle_name": {
+                            "NULL": true
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "Jeff"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "53"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "1332353"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Chief Operating Officer"
+                          },
+                          "start": {
+                            "S": "2015-12-16"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      },
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Senior Vice President - Operations"
+                          },
+                          "start": {
+                            "S": "2010-07-01"
+                          },
+                          "end": {
+                            "S": "2015-12-16"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2009-09-01"
+                          },
+                          "tenure": {
+                            "S": "officer"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Sewell"
+                          },
+                          "middle_name": {
+                            "S": "Bruce"
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "Durward"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "58"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "1235656"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Senior Vice President, General Counsel, Secretary"
+                          },
+                          "start": {
+                            "S": "2009-09-01"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "1997-04-01"
+                          },
+                          "tenure": {
+                            "S": "officer"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Schiller"
+                          },
+                          "middle_name": {
+                            "NULL": true
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "Phil"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "56"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "346990"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Senior Vice President - Worldwide Marketing"
+                          },
+                          "start": {
+                            "S": "1997-04-01"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2014-05-01"
+                          },
+                          "tenure": {
+                            "S": "officer"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "F"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Ms."
+                          },
+                          "last_name": {
+                            "S": "Ahrendts"
+                          },
+                          "middle_name": {
+                            "S": "J."
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "Angela"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "56"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "1307325"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Senior Vice President - Retail and Online Stores"
+                          },
+                          "start": {
+                            "S": "2014-05-01"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2001-01-01"
+                          },
+                          "tenure": {
+                            "S": "officer"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Cue"
+                          },
+                          "middle_name": {
+                            "NULL": true
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "Eddy"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "53"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "1436379"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Senior Vice President - Internet Software and Services"
+                          },
+                          "start": {
+                            "S": "2011-01-01"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2012-08-27"
+                          },
+                          "tenure": {
+                            "S": "officer"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Federighi"
+                          },
+                          "middle_name": {
+                            "NULL": true
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "Craig"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "47"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "458109"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Senior Vice President - Software Engineering"
+                          },
+                          "start": {
+                            "S": "2012-08-27"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2012-06-28"
+                          },
+                          "tenure": {
+                            "S": "officer"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Riccio"
+                          },
+                          "middle_name": {
+                            "S": "J."
+                          },
+                          "suffix": {
+                            "S": "Jr"
+                          },
+                          "first_name": {
+                            "S": "Daniel"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "54"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "1490298"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Senior Vice President - Hardware Engineering"
+                          },
+                          "start": {
+                            "S": "2012-06-28"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2015-10-01"
+                          },
+                          "tenure": {
+                            "S": "director"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Bell"
+                          },
+                          "middle_name": {
+                            "S": "A."
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "James"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "68"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "2207452"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Independent Director"
+                          },
+                          "start": {
+                            "S": "2015-10-01"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2003-03-19"
+                          },
+                          "tenure": {
+                            "S": "director"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Gore"
+                          },
+                          "middle_name": {
+                            "NULL": true
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "AI"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "68"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "358346"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Independent Director"
+                          },
+                          "start": {
+                            "S": "2003-03-19"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2011-11-15"
+                          },
+                          "tenure": {
+                            "S": "director"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Iger"
+                          },
+                          "middle_name": {
+                            "S": "A."
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "Robert"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "66"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "1424218"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Independent Director"
+                          },
+                          "start": {
+                            "S": "2011-11-15"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2011-01-01"
+                          },
+                          "tenure": {
+                            "S": "director"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "F"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Ms."
+                          },
+                          "last_name": {
+                            "S": "Jung"
+                          },
+                          "middle_name": {
+                            "NULL": true
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "Andrea"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "58"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "828539"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Independent Director"
+                          },
+                          "start": {
+                            "S": "2011-01-01"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2010-11-17"
+                          },
+                          "tenure": {
+                            "S": "director"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Dr."
+                          },
+                          "last_name": {
+                            "S": "Sugar"
+                          },
+                          "middle_name": {
+                            "S": "D."
+                          },
+                          "suffix": {
+                            "S": "Ph.D."
+                          },
+                          "first_name": {
+                            "S": "Ronald"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "68"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "20777"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Independent Director"
+                          },
+                          "start": {
+                            "S": "2010-11-17"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "summary": {
+            "M": {
+              "price_change": {
+                "N": "1.6584"
+              },
+              "price": {
+                "N": "148.96"
+              },
+              "rating": {
+                "N": "3"
+              }
+            }
+          },
+          "ticker": {
+            "S": "aapl"
+          },
+          "address": {
+            "M": {
+              "country_code": {
+                "S": "usa"
+              },
+              "street_address": {
+                "S": "1 Infinite Loop"
+              },
+              "city": {
+                "S": "CUPERTINO"
+              },
+              "postal_code": {
+                "S": "95014-2083"
+              },
+              "region": {
+                "S": "CA"
+              }
+            }
+          },
+          "shareholders": {
+            "N": "25641"
+          },
+          "active": {
+            "BOOL": true
+          },
+          "ipo": {
+            "S": "1980-12-12"
+          },
+          "dates": {
+            "M": {
+              "available_interim": {
+                "S": "2017-04-01"
+              },
+              "available_annual": {
+                "S": "2016-09-24"
+              },
+              "fiscal_period": {
+                "S": "2017-09"
+              },
+              "financial_summary": {
+                "S": "2017-5"
+              },
+              "modified": {
+                "S": "2017-05-03"
+              },
+              "fiscal_interim": {
+                "S": "2017-06"
+              }
+            }
+          },
+          "irs": {
+            "S": "942404110"
+          },
+          "classification": {
+            "S": "equity"
+          },
+          "country_code": {
+            "S": "usa"
+          },
+          "indices": {
+            "L": [
+              {
+                "S": "Dow Industry"
+              },
+              {
+                "S": "S&P 500"
+              },
+              {
+                "S": "NASDAQ 100 Index"
+              },
+              {
+                "S": "TR Equity United States Index"
+              }
+            ]
+          },
+          "short_name": {
+            "S": "Apple Inc."
+          },
+          "equity_composition": {
+            "S": "Common Stock no Par, 4/11, 1.80B auth., 924,754,561 issd. Insiders control less than 0.06%. PO: 5/81, 2.6M shares @ $31.25 by Morgan Stanley & Co. 2/05, 6/00 & 5/87, 2-for-1 stock splits. 1/07, Name changed from Apple Computer, Inc. 06/14, 7-for-1 Stock split."
+          },
+          "category": {
+            "S": "ord"
+          },
+          "employees": {
+            "N": "116000"
+          },
+          "isin": {
+            "S": "us0378331005"
+          },
+          "region_code": {
+            "S": "amer"
+          }
+        },
+        "OldImage": {
+          "cik": {
+            "S": "0000320193"
+          },
+          "is_primary": {
+            "BOOL": true
+          },
+          "address_country_code": {
+            "S": "usa"
+          },
+          "description": {
+            "S": "Apple Inc. designs, manufactures and markets mobile communication and media devices, personal computers and portable digital music players. The Company sells a range of related software, services, accessories, networking solutions, and third-party digital content and applications. The Company's segments include the Americas, Europe, Greater China, Japan and Rest of Asia Pacific. The Americas segment includes both North and South America. The Europe segment includes European countries, India, the Middle East and Africa. The Greater China segment includes China, Hong Kong and Taiwan. The Rest of Asia Pacific segment includes Australia and the Asian countries not included in the Company's other operating segments. Its products and services include iPhone, iPad, Mac, iPod, Apple Watch, Apple TV, a portfolio of consumer and professional software applications, iPhone OS (iOS), OS X and watchOS operating systems, iCloud, Apple Pay and a range of accessory, service and support offerings."
+          },
+          "sic": {
+            "S": "6c8227be-6855-11e4-98bf-294717b2347c"
+          },
+          "ipo_date": {
+            "N": "345427200"
+          },
+          "issues": {
+            "L": []
+          },
+          "ric": {
+            "S": "aapl.o"
+          },
+          "currency_code": {
+            "S": "usd"
+          },
+          "long_name": {
+            "S": "Apple Inc."
+          },
+          "home_page": {
+            "S": "http://www.apple.com"
+          },
+          "repo_no": {
+            "S": "05680"
+          },
+          "split": {
+            "M": {
+              "date": {
+                "S": "2014-06-09T00:00:00+00:00"
+              },
+              "ratio": {
+                "N": "7"
+              }
+            }
+          },
+          "incorporated": {
+            "NULL": true
+          },
+          "auditors": {
+            "L": [
+              {
+                "S": "Ernst & Young LLP"
+              }
+            ]
+          },
+          "financial_summary": {
+            "S": "BRIEF: For the 27 weeks ended 01 April 2017, Apple Inc. revenues increased 4% to $131.25B. Net income increased less than 1% to $28.92B. Revenues reflect Americas- Operating segment increase of 10% to $53.13B, Europe-Operating segment increase of 6% to $31.25B. Net income reflects Americas- Operating segment income increase of 6% to $17.16B, Japan-Operating segment income increase of 13% to $4.71B."
+          },
+          "exchange_code": {
+            "S": "nsq"
+          },
+          "sector_code": {
+            "S": "5710601010"
+          },
+          "is_financial": {
+            "BOOL": false
+          },
+          "officers": {
+            "L": [
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2011-11-15"
+                          },
+                          "tenure": {
+                            "S": "officer"
+                          }
+                        }
+                      },
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2000-08-15"
+                          },
+                          "tenure": {
+                            "S": "director"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Dr."
+                          },
+                          "last_name": {
+                            "S": "Levinson"
+                          },
+                          "middle_name": {
+                            "S": "D."
+                          },
+                          "suffix": {
+                            "S": "Ph.D."
+                          },
+                          "first_name": {
+                            "S": "Art"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "66"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "480660"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Independent Chairman of the Board"
+                          },
+                          "start": {
+                            "S": "2011-11-15"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      },
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Independent Co-Lead Director"
+                          },
+                          "start": {
+                            "NULL": true
+                          },
+                          "end": {
+                            "S": "2011-11-15"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "1998-03-01"
+                          },
+                          "tenure": {
+                            "S": "officer"
+                          }
+                        }
+                      },
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2011-08-24"
+                          },
+                          "tenure": {
+                            "S": "director"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Cook"
+                          },
+                          "middle_name": {
+                            "S": "D."
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "Timothy"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "55"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "88090"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Chief Executive Officer, Director"
+                          },
+                          "start": {
+                            "S": "2011-08-24"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      },
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Chief Operating Officer"
+                          },
+                          "start": {
+                            "S": "2005-10-14"
+                          },
+                          "end": {
+                            "S": "2011-08-24"
+                          }
+                        }
+                      },
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Executive Vice President - Worldwide Sales and Operations"
+                          },
+                          "start": {
+                            "S": "2002-01-01"
+                          },
+                          "end": {
+                            "S": "2005-10-14"
+                          }
+                        }
+                      },
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Senior Vice President - Worldwide Operations, Sales, Service and Support"
+                          },
+                          "start": {
+                            "S": "2000-01-01"
+                          },
+                          "end": {
+                            "S": "2002-01-01"
+                          }
+                        }
+                      },
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Senior Vice President - Worldwide Operations"
+                          },
+                          "start": {
+                            "S": "1998-03-01"
+                          },
+                          "end": {
+                            "S": "2000-01-01"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2014-05-29"
+                          },
+                          "tenure": {
+                            "S": "officer"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Maestri"
+                          },
+                          "middle_name": {
+                            "NULL": true
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "Luca"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "53"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "1339708"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Chief Financial Officer, Senior Vice President, Principal Accounting Officer"
+                          },
+                          "start": {
+                            "S": "2014-05-29"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2010-07-01"
+                          },
+                          "tenure": {
+                            "S": "officer"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Williams"
+                          },
+                          "middle_name": {
+                            "NULL": true
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "Jeff"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "53"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "1332353"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Chief Operating Officer"
+                          },
+                          "start": {
+                            "S": "2015-12-16"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      },
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Senior Vice President - Operations"
+                          },
+                          "start": {
+                            "S": "2010-07-01"
+                          },
+                          "end": {
+                            "S": "2015-12-16"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2009-09-01"
+                          },
+                          "tenure": {
+                            "S": "officer"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Sewell"
+                          },
+                          "middle_name": {
+                            "S": "Bruce"
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "Durward"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "58"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "1235656"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Senior Vice President, General Counsel, Secretary"
+                          },
+                          "start": {
+                            "S": "2009-09-01"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "1997-04-01"
+                          },
+                          "tenure": {
+                            "S": "officer"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Schiller"
+                          },
+                          "middle_name": {
+                            "NULL": true
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "Phil"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "56"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "346990"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Senior Vice President - Worldwide Marketing"
+                          },
+                          "start": {
+                            "S": "1997-04-01"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2014-05-01"
+                          },
+                          "tenure": {
+                            "S": "officer"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "F"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Ms."
+                          },
+                          "last_name": {
+                            "S": "Ahrendts"
+                          },
+                          "middle_name": {
+                            "S": "J."
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "Angela"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "56"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "1307325"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Senior Vice President - Retail and Online Stores"
+                          },
+                          "start": {
+                            "S": "2014-05-01"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2001-01-01"
+                          },
+                          "tenure": {
+                            "S": "officer"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Cue"
+                          },
+                          "middle_name": {
+                            "NULL": true
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "Eddy"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "53"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "1436379"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Senior Vice President - Internet Software and Services"
+                          },
+                          "start": {
+                            "S": "2011-01-01"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2012-08-27"
+                          },
+                          "tenure": {
+                            "S": "officer"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Federighi"
+                          },
+                          "middle_name": {
+                            "NULL": true
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "Craig"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "47"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "458109"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Senior Vice President - Software Engineering"
+                          },
+                          "start": {
+                            "S": "2012-08-27"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2012-06-28"
+                          },
+                          "tenure": {
+                            "S": "officer"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Riccio"
+                          },
+                          "middle_name": {
+                            "S": "J."
+                          },
+                          "suffix": {
+                            "S": "Jr"
+                          },
+                          "first_name": {
+                            "S": "Daniel"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "54"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "1490298"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Senior Vice President - Hardware Engineering"
+                          },
+                          "start": {
+                            "S": "2012-06-28"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2015-10-01"
+                          },
+                          "tenure": {
+                            "S": "director"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Bell"
+                          },
+                          "middle_name": {
+                            "S": "A."
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "James"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "68"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "2207452"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Independent Director"
+                          },
+                          "start": {
+                            "S": "2015-10-01"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2003-03-19"
+                          },
+                          "tenure": {
+                            "S": "director"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Gore"
+                          },
+                          "middle_name": {
+                            "NULL": true
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "AI"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "68"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "358346"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Independent Director"
+                          },
+                          "start": {
+                            "S": "2003-03-19"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2011-11-15"
+                          },
+                          "tenure": {
+                            "S": "director"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Mr."
+                          },
+                          "last_name": {
+                            "S": "Iger"
+                          },
+                          "middle_name": {
+                            "S": "A."
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "Robert"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "66"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "1424218"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Independent Director"
+                          },
+                          "start": {
+                            "S": "2011-11-15"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2011-01-01"
+                          },
+                          "tenure": {
+                            "S": "director"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "F"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Ms."
+                          },
+                          "last_name": {
+                            "S": "Jung"
+                          },
+                          "middle_name": {
+                            "NULL": true
+                          },
+                          "suffix": {
+                            "NULL": true
+                          },
+                          "first_name": {
+                            "S": "Andrea"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "58"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "828539"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Independent Director"
+                          },
+                          "start": {
+                            "S": "2011-01-01"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "M": {
+                  "tenures": {
+                    "L": [
+                      {
+                        "M": {
+                          "start": {
+                            "S": "2010-11-17"
+                          },
+                          "tenure": {
+                            "S": "director"
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "information": {
+                    "M": {
+                      "gender": {
+                        "S": "M"
+                      },
+                      "name": {
+                        "M": {
+                          "prefix": {
+                            "S": "Dr."
+                          },
+                          "last_name": {
+                            "S": "Sugar"
+                          },
+                          "middle_name": {
+                            "S": "D."
+                          },
+                          "suffix": {
+                            "S": "Ph.D."
+                          },
+                          "first_name": {
+                            "S": "Ronald"
+                          }
+                        }
+                      },
+                      "age": {
+                        "N": "68"
+                      }
+                    }
+                  },
+                  "id": {
+                    "S": "20777"
+                  },
+                  "titles": {
+                    "L": [
+                      {
+                        "M": {
+                          "name": {
+                            "S": "Independent Director"
+                          },
+                          "start": {
+                            "S": "2010-11-17"
+                          },
+                          "end": {
+                            "NULL": true
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "summary": {
+            "M": {
+              "price_change": {
+                "N": "1.6584"
+              },
+              "price": {
+                "N": "148.96"
+              },
+              "rating": {
+                "N": "3"
+              }
+            }
+          },
+          "ticker": {
+            "S": "aapl"
+          },
+          "address": {
+            "M": {
+              "country_code": {
+                "S": "usa"
+              },
+              "street_address": {
+                "S": "1 Infinite Loop"
+              },
+              "city": {
+                "S": "CUPERTINO"
+              },
+              "postal_code": {
+                "S": "95014-2083"
+              },
+              "region": {
+                "S": "CA"
+              }
+            }
+          },
+          "shareholders": {
+            "N": "25641"
+          },
+          "active": {
+            "BOOL": true
+          },
+          "ipo": {
+            "S": "1980-12-12"
+          },
+          "dates": {
+            "M": {
+              "available_interim": {
+                "S": "2017-04-01"
+              },
+              "available_annual": {
+                "S": "2016-09-24"
+              },
+              "fiscal_period": {
+                "S": "2017-09"
+              },
+              "financial_summary": {
+                "S": "2017-5"
+              },
+              "modified": {
+                "S": "2017-05-03"
+              },
+              "fiscal_interim": {
+                "S": "2017-06"
+              }
+            }
+          },
+          "irs": {
+            "S": "942404110"
+          },
+          "classification": {
+            "S": "equity"
+          },
+          "country_code": {
+            "S": "usa"
+          },
+          "indices": {
+            "L": [
+              {
+                "S": "Dow Industry"
+              },
+              {
+                "S": "S&P 500"
+              },
+              {
+                "S": "NASDAQ 100 Index"
+              },
+              {
+                "S": "TR Equity United States Index"
+              }
+            ]
+          },
+          "short_name": {
+            "S": "Apple Inc."
+          },
+          "equity_composition": {
+            "S": "Common Stock no Par, 4/11, 1.80B auth., 924,754,561 issd. Insiders control less than 0.06%. PO: 5/81, 2.6M shares @ $31.25 by Morgan Stanley & Co. 2/05, 6/00 & 5/87, 2-for-1 stock splits. 1/07, Name changed from Apple Computer, Inc. 06/14, 7-for-1 Stock split."
+          },
+          "category": {
+            "S": "ord"
+          },
+          "employees": {
+            "N": "116000"
+          },
+          "isin": {
+            "S": "us0378331005"
+          },
+          "region_code": {
+            "S": "amer"
+          }
+        },
+        "SequenceNumber": "3398364800000000009492609006",
+        "SizeBytes": 13407,
+        "StreamViewType": "NEW_AND_OLD_IMAGES"
+      },
+      "eventSourceARN": "arn:aws:dynamodb:us-east-1:405091209094:table/instruments-resource-InstrumentDynamoDBTable-1OP8Q9EP319Y9/stream/2016-01-28T10:08:06.748"
+    }
+  ]
+}
