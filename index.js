@@ -88,7 +88,7 @@ exports.handler = function(event, context) {
           }).then(function(record){
             resolve(record);
           }, function(reason){
-            // console.log(reason);
+            console.log(reason);
             reject(reason);
           });
         }
@@ -136,6 +136,7 @@ var recordExists = function(es, table, record) {
       } else if (status == 404) {
         resolve(false);
       } else {
+        console.log(err);
         reject(err);
       }
     });
@@ -174,7 +175,7 @@ var putRecord = function(es, table, record, exists) {
               resolve(record)
             }
           }).on('fail', function(data, response){
-            // console.log('Could not get Sector Code:');
+            console.log('Could not get Sector Code:');
             resolve(record);
           });
         } else {
